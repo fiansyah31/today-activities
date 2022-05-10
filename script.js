@@ -10,11 +10,11 @@ var subtitle = "help you keep track of your daily to-do list, and prepare for th
 
     //Button
     function myTodo() {
-        location.replace("http://127.0.0.1:5500/todolist.html")
+        location.replace("https://today-activities.vercel.app/todolist.html")
       }
 
       function myTerms() {
-        location.replace("http://127.0.0.1:5500/terms.html")
+        location.replace("https://today-activities.vercel.app/terms.html")
       }
 
       if(todo.save) {
