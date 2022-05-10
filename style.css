@@ -1,0 +1,57 @@
+.columns .hero-title {
+    align-self: center;
+}
+
+.title-hero {
+    color: #f71d5e;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.subtitle-hero {
+    color: #7a7a7a;
+    margin-top: 5px;
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.page-hero{
+    scroll-behavior: smooth;
+    overflow: visible ;
+}
+
+
+.page-content {
+    margin-top: 60px;
+}
+.todo-wrap {
+    margin: 0 auto;
+    width: 50%;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+  .todo-item.todo-ok {
+      
+    background: #d3497a;
+color: #ffffff  ; }
+    
+    .todo-del, .todo-done {
+    cursor: pointer;
+  }
+
+
+@media (max-width:767px) {
+    .todo-wrap {
+        padding: 0 20px;
+        width: 100%;
+    }
+}

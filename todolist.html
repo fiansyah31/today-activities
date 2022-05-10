@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aplication</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" >
+    <script src="node_modules/bulma/css/bulma.css.map"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script defer src="todo.js"></script>
+  </head>
+<body>
+     <section class="page-content">
+         <div class="container is-max-desktop">
+            <div class="todo-wrap" id="todo-wrap">
+              <!--Add new item-->
+                <form id="todo-add">
+                    <div class="field">
+                        <label class="label">Task</label>
+                        <div class="control">
+                          <input class="input" id="todo-item" type="text" placeholder="Enter task title" required>
+                        </div>
+                      </div> 
+                      <input type="submit" id="todo-save" class="button is-danger is-light" value="Add Task">
+                </form>
+
+                <!--List item-->
+             <div id="todo-list"></div>
+  
+             <!--Item template-->
+             <template id="todo-template">
+               <div class="todo-row">
+                     <div class="card">
+                       <header class="card-header">
+                         <p class="card-header-title todo-item">
+                         </p>
+                        
+                       </header>
+                       <div class="card-body">
+                         <div id="tanggal">
+                         </div>
+                       </div>
+                       <footer class="card-footer">
+                         <a href="#" class="card-footer-item todo-done" id="save">Save</a>
+                         <a href="#" class="card-footer-item todo-del">Delete</a>
+                       </footer>
+                     </div>
+                </div>
+             </template>   
+              </div>
+         </div>
+     </section>   
+
+     <script>
+       var d = new Date();
+        document.getElementById("tanggal").innerHTML = d;
+     </script>
+     
+</body>
